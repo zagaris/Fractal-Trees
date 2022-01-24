@@ -1,5 +1,8 @@
 const canvas = document.querySelector('canvas');
 const button = document.querySelector('.generate');
+const btn = document.querySelector('.btn');
+const helpButton = document.querySelector('.help');
+const modal = document.getElementById("modal");
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -54,4 +57,22 @@ function generateTree() {
 button.addEventListener('click', function() {
     generateTree();
 })
+
+
+btn.addEventListener('click', function() {
+    var dataURL = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    console.log(dataURL);
+    window.location.href=dataURL;
+})
+
+helpButton.addEventListener('click', function() {
+    modal.style.display = "block";
+})
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
 

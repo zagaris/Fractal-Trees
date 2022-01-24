@@ -11,6 +11,27 @@ canvas{
     height: 100%;
 }
 
+.help {
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    bottom: 5%;
+    z-index: 10;
+    bottom: 5%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    padding: 20px 30px;
+    border-radius: 120px;
+    background: rgb(140, 52, 158);
+    color: black;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.help:hover {
+    background-color: RoyalBlue;
+  }
+
 .generate {
     cursor: pointer;
     border:none;
@@ -27,3 +48,28 @@ canvas{
     font-size: 25px;
     overflow: hidden;
 }
+
+.generate:hover {
+    background-color: RoyalBlue;
+  }
+
+.btn {
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 10;
+    left: 75%;
+    transform: translate(-50%, 0);
+    padding: 20px 30px;
+    border-radius: 100px;
+    background: rgb(140, 52, 158);
+    color: black;
+    font-size: 25px;
+    overflow: hidden;
+  }
+  
+.btn:hover {
+    background-color: RoyalBlue;
+  }
