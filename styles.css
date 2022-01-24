@@ -36,7 +36,6 @@ canvas{
     cursor: pointer;
     border:none;
     position: absolute;
-    left: 0;
     bottom: 5%;
     z-index: 10;
     left: 50%;
@@ -57,7 +56,6 @@ canvas{
     cursor: pointer;
     border:none;
     position: absolute;
-    left: 0;
     bottom: 5%;
     z-index: 10;
     left: 75%;
